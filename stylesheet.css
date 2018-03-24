@@ -1,0 +1,204 @@
+* {
+  margin:0;
+  padding:0;
+  font-size: 20;
+  font-family: 'louis_george_cafregular';
+}
+
+@font-face {
+    font-family: 'louis_george_cafregular';
+    src: url('louis_george_cafe-webfont.woff2') format('woff2'),
+         url('louis_george_cafe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/atlas%20view%202.JPG);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+div.content {
+    margin-left: 200px;
+}
+
+div.side {
+    position: fixed;
+    height: 100%;
+    top: 200;
+    left: 0;
+    width: 180px;
+    padding: 10px;
+}
+
+div.side ul {
+    margin: 10;
+    line-height: 2;
+    padding: 0;
+    list-style-type: none;
+}
+
+div.side ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+div.side li.active a {
+  border-bottom: 2px solid white;
+}
+
+div.side li a:hover {
+  border-bottom: 2px solid white;
+}
+
+div.logo img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 10px solid #752300;
+}
+
+body {
+  font-family: monospace;
+}
+
+div.content h1,h2 {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  font-size: 30;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+}
+
+div.content h2 {
+top: 250px;
+}
+
+div.instagram img {
+  position: fixed;
+  top: 425px;
+  left: 20px;
+  width: 15px;
+  height: auto;
+}
+
+div.linkedin img {
+  position: fixed;
+  top: 425px;
+  left: 40px;
+  width: 15px;
+  height: auto;
+}
+
+div.scrolldown-middle img {
+  position: absolute;
+  bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 50%;
+  width: 70px;
+  height: auto;
+}
+
+div.scrolldown-left img {
+  position: absolute;
+  bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 75%;
+  width: 70px;
+  height: auto;
+}
+
+div.scrolldown-right img {
+  position: absolute;
+  bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 25%;
+  width: 70px;
+  height: auto;
+}
+
+/* Responsive Photolayout */
+
+.flexbin {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: -2.5px; }
+  .flexbin:after {
+    content: '';
+    flex-grow: 999999999;
+    min-width: 300px;
+    height: 0; }
+  .flexbin > * {
+    position: relative;
+    display: block;
+    height: 300px;
+    margin: 2.5px;
+    flex-grow: 1; }
+    .flexbin > * > img {
+      height: 300px;
+      object-fit: cover;
+      max-width: 100%;
+      min-width: 100%;
+      vertical-align: bottom; }
+  .flexbin.flexbin-margin {
+    margin: 2.5px; }
+  @media (max-width: 980px) {
+    .flexbin {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      margin: -2.5px; }
+      .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 150px;
+        height: 0; }
+      .flexbin > * {
+        position: relative;
+        display: block;
+        height: 150px;
+        margin: 2.5px;
+        flex-grow: 1; }
+        .flexbin > * > img {
+          height: 150px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+      .flexbin.flexbin-margin {
+        margin: 2.5px; } }
+  @media (max-width: 400px) {
+    .flexbin {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      margin: -2.5px; }
+      .flexbin:after {
+        content: '';
+        flex-grow: 999999999;
+        min-width: 100px;
+        height: 0; }
+      .flexbin > * {
+        position: relative;
+        display: block;
+        height: 100px;
+        margin: 2.5px;
+        flex-grow: 1; }
+        .flexbin > * > img {
+          height: 100px;
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          vertical-align: bottom; }
+      .flexbin.flexbin-margin {
+        margin: 2.5px; } }
